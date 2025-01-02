@@ -1,0 +1,90 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: $box_sizing_inherit;
+}
+
+html {
+  scroll-behavior: $scroll_behavior_smooth;
+}
+body {
+  font-family: "Poppins", serif;
+  box-sizing: $box_sizing_border_box;
+}
+
+p {
+  @include typography();
+}
+a {
+  text-decoration: $text_decoration_none;
+}
+ul {
+  list-style: $list_style_none;
+}
+select,
+input {
+  border: $border_none;
+  outline: $outline_none;
+}
+footer,
+section {
+  padding: 80px 0px 60px 0px;
+  width: 100%;
+}
+.cursor{
+    cursor: $cursor_pointer;
+}
+h1 {
+  font-family: "Poppins", serif;
+  font-size: 30px;
+  line-height: 36px;
+  @media (max-width: 768px) {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  @media (max-width: 425px) {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+h2 {
+  font-family: "Poppins", serif;
+  font-size: 20px;
+  line-height: 20px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  @media (max-width: 425px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+h3 {
+  font-family: "Poppins", serif;
+  font-size: 15px;
+  line-height: 18px;
+}
+.title {
+  .title_text {
+    h1 {
+      color: $black-clr;
+    }
+    p {
+      color: $text-clr;
+    }
+  }
+  a {
+    @include typography(15px, 28px);
+    color: $black-clr;
+
+    &:hover {
+      text-decoration: $text_decoration_underline;
+    }
+  }
+}

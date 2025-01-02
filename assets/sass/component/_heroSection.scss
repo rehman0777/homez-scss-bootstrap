@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+.hero_section{
+    background: url(../../../assets/public/images/heroSection.png);
+    @include backgroundImage();
+
+    .heroSection_main{
+        background: $white-clr;
+        border-radius: $border_radius;
+
+        .search-box input {
+            border-bottom: 1px solid transparent;
+            padding: 8px;
+
+            &:hover,
+            &:focus{
+                border-bottom: 1px solid $black-clr;
+            }
+          }
+    }
+}

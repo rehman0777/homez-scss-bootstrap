@@ -1,0 +1,96 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+header {
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-nav {
+  > li {
+    height: $width_fit_content;
+    border-bottom: $border_none;
+
+    > .nav-link {
+      @include typography(14px, 26px);
+      color: $black-clr;
+
+      span {
+        font-size: 20px;
+      }
+
+      &:hover {
+        color: $pink-clr;
+      }
+      &.active {
+        color: $pink-clr;
+      }
+    }
+
+    &:hover .dropdown-content {
+      display: $display_block;
+    }
+  }
+}
+
+.dropdown-content {
+  display: $display_none;
+  background-color: $pink-clr;
+  min-width: 160px;
+  border-radius: $border_radius;
+
+  li {
+    a {
+      color: $white-clr;
+      @include typography();
+
+      &:hover {
+        border-bottom: 1px solid $white-clr;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.header_buttons {
+  .contact_number {
+    a {
+      color: $black-clr;
+      &:hover {
+        border-bottom: 1px solid $black-clr;
+      }
+    }
+  }
+
+  .user_img {
+    color: $black-clr;
+  }
+
+  .signIn {
+    @include typography();
+    color: $black-clr;
+
+    a {
+      color: $black-clr;
+
+      &:hover {
+        border-bottom: 1px solid $black-clr;
+      }
+    }
+  }
+
+  button {
+    @include outline_Button($border-clr: $black-clr);
+    @include typography();
+    outline: $outline_auto;
+
+    span {
+      color: $black-clr;
+    }
+
+    &:hover {
+      span {
+        color: $white-clr;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@use "./variables" as *;
+@mixin typography(
+  $font-size: 14px,
+  $line-height: 26px,
+) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin backgroundImage {
+  background-repeat: $background_repeat_repeat;
+  background-size: $background_size_cover;
+}
+@mixin fill_Button(
+  $btn-text-color: $white-clr,
+  $btn-bg-color: $pink-clr,
+  $border-clr: $pink-clr,
+  $hover-btn-color: $white-clr,
+  $hover-btn-bg-color: $pink-dark-clr,
+  $hover-border-clr: $pink-dark-clr
+) {
+  background-color: $btn-bg-color;
+  color: $btn-text-color;
+  border-color: $border-clr;
+  cursor: $cursor_pointer;
+
+  &:hover {
+    color: $hover-btn-color;
+    background-color: $hover-btn-bg-color;
+    border-color: $hover-border-clr;
+  }
+
+  &:focus {
+    outline: $outline_none;
+  }
+}
+@mixin outline_Button(
+  $btn-text-color: $black-clr,
+  $btn-bg-color: $white-clr,
+  $border-clr: $pink-clr,
+  $hover-btn-color: $white-clr,
+  $hover-btn-bg-color: $pink-clr,
+  $hover-border-clr: $pink-clr
+) {
+  background-color: $btn-bg-color;
+  border-color: $border-clr;
+  color: $btn-text-color;
+  cursor: $cursor_pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    color: $hover-btn-color;
+    background-color: $hover-btn-bg-color;
+    border-color: $hover-border-clr;
+  }
+
+  &:focus {
+    outline: $outline_none;
+  }
+}
