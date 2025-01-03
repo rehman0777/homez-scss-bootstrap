@@ -1,0 +1,95 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+footer {
+  background-color: $black-clr;
+
+  .address {
+    p {
+      color: $text-clr;
+    }
+  }
+  .footer_input h3,
+  .social,
+  .social a,
+  .address h3 a,
+  .apps_detail {
+    color: $white-clr;
+  }
+  .apps_detail_main {
+    background-color: #ffffff0a;
+
+    p {
+      color: $text-clr;
+      font-size: 13px;
+    }
+    h3 {
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+  .footer_input {
+    .input-container input {
+      padding-right: 90px;
+      box-sizing: $box_sizing_border_box;
+      background: #ffffff14;
+      color: $white-clr;
+    }
+
+    .input-container button {
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      @include fill_Button(
+        $btn-bg-color: $background_color_transparent,
+        $hover-btn-color: $pink-clr,
+        $hover-btn-bg-color: $background_color_transparent
+      );
+      color: $white-clr;
+    }
+  }
+  .footer_menu_left{
+    color: $white-clr;
+
+    ul{
+        li {
+            a{
+                color: $text-clr;
+                &:hover{
+                    color: $white-clr;
+                }
+            }
+        }
+    }
+  }
+  .footer_bottom {
+    &::before {
+      content: "";
+      background: #ffffff12;
+      width: 100%;
+      height: 1px;
+      display: $display_block;
+      margin: 30px 0px;
+    }
+
+    .footer_bottom_main {
+     
+      .copywrite {
+        @include typography();
+        color: $text-clr;
+      }
+
+      .footer_social {
+      
+        a {
+          color: $text-clr;
+          @include typography();
+
+          &:hover{
+            color: $white-clr;
+          }
+        }
+      }
+    }
+  }
+}

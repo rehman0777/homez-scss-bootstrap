@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.customer_sec {
+    background-color: $bg2-clr;
+
+      .card {
+        background-color: $white-clr;
+  
+        .card_text {
+          p {
+            color: $black-clr;
+          }
+        }
+  
+        button {
+          @include outline_Button($pink-clr,);
+          outline: $outline_auto;
+         
+        }
+      }
+  }

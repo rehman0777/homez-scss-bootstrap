@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+.testimonials_sec{
+    background-color: $bg-clr;
+
+    .testimonials_item{
+        h2{
+            width: 80%;
+        }
+
+        .client_img{
+            width: 70px;
+            height: 70px;
+            img{
+                border-radius: $border_radius + 40;
+            }
+        }
+    }
+      
+}

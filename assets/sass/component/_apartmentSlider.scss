@@ -1,0 +1,64 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.featured_Listings {
+    padding: 150px 0px 60px 0px;
+  
+    .title {
+
+      .title_text {
+        a {
+          @include typography(15px, 28px);
+          color: $black-clr;
+  
+          &:hover {
+            text-decoration: $text_decoration_underline;
+          }
+        }
+      }
+    }
+  
+    .card {
+        
+      .card_main {
+        width: 95%;
+  
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+  
+        .card_img {
+  
+            
+          p {
+            top: 15px;
+            left: 15px;
+            @include typography();
+            background-color: $pink-clr;
+            color: $white-clr;
+            }
+            span{
+                bottom: 15px;
+                left: 15px;
+                @include typography();
+                background-color: $white-clr;
+                color: $black-clr;
+            }
+        }
+  
+        .card_text {
+          background-color: $white-clr;
+  
+          p {
+            color: $text-clr;
+            @include typography();
+        }
+        .area{
+            span{
+                @include typography();
+            }
+          }
+        }
+      }
+    }
+  }

@@ -1,145 +1,781 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homez</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homez</title>
 
-        <!-- ------------------ Font Awesome Icon ---------------------  -->
-        <link rel="stylesheet" href="./assets/public/icons/fontawesome-free-6.7.1-web/css/all.min.css" />
+  <!-- ------------------ Font Awesome Icon ---------------------  -->
+  <link rel="stylesheet" href="./assets/public/icons/fontawesome-free-6.7.1-web/css/all.min.css" />
 
-        <!-- ------------------ Font -----------------  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet"
-        />
-            <!-- ---------- Bootstrap file ------------------- -->
-        <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+  <!-- ------------------ Font -----------------  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- ---------- Bootstrap file ------------------- -->
+  <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
 
 
-        <!-- --------------- Slick Slider ---------  -->
-        <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
-    
-        <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick-theme.css" />
-        <!-- --------------- style sheet -------------  -->
-        <link rel="stylesheet" href="./assets/sass/style.css" />
+  <!-- --------------- Slick Slider ---------  -->
+  <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick-theme.css" />
+  <!-- --------------- style sheet -------------  -->
+  <link rel="stylesheet" href="./assets/sass/style.css" />
 </head>
+
 <body>
-    <header class="w-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg py-3">
-                        <div class="container-fluid">
-                          <a href="#"><img src="./assets/public/images/logo.svg.png" alt="Logo" /></a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center gap-lg-2 ms-4">
-                              <li class="nav-item position-relative">
-                                <a class="nav-link active" href="#">Home</a>
-                              </li>
+  <header class="w-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg py-3">
+            <div class="container-fluid">
+              <a href="#"><img src="./assets/public/images/logo.svg.png" alt="Logo" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center gap-lg-2 ms-4">
+                  <li class="nav-item position-relative">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
 
-                              <li class="nav-item dropdown position-relative">
-                                <a href="#" class="nav-link">Listings <span>&#8209;</span></a>
-                                <ul class="dropdown-content position-absolute py-2 px-3">
-                                  <li class="mb-1"><a href="#">Houses</a></li>
-                                  <li class="mb-1"><a href="#">Apartments</a></li>
-                                  <li class="mb-1"><a href="#">Offices</a></li>
-                                </ul>
-                              </li>
+                  <li class="nav-item position-relative">
+                    <a href="#" class="nav-link">Listings</a>
+                  </li>
 
-                              <li class="nav-item dropdown position-relative">
-                                <a href="#" class="nav-link">Members <span>&#8209;</span></a>
-                                <ul class="dropdown-content position-absolute py-2 px-3">
-                                  <li class="mb-1"><a href="#">Amazon</a></li>
-                                  <li class="mb-1"><a href="#">Dropcam</a></li>
-                                  <li class="mb-1"><a href="#">Logitech</a></li>
-                                </ul>
-                              </li>
+                  <li class="nav-item position-relative">
+                    <a href="#" class="nav-link">Members</a>
+                  </li>
 
-                              <li class="nav-item dropdown position-relative">
-                                <a href="#" class="nav-link">Blog <span>&#8209;</span></a>
-                                <ul class="dropdown-content position-absolute py-2 px-3">
-                                  <li class="mb-1"><a href="#">Design</a></li>
-                                  <li class="mb-1"><a href="#">Location</a></li>
-                                  <li class="mb-1"><a href="#">Structures</a></li>
-                                </ul>
-                              </li>
+                  <li class="nav-item position-relative">
+                    <a href="#" class="nav-link">Blog</a>
+                  </li>
 
-                              <li class="nav-item dropdown position-relative">
-                                <a href="#" class="nav-link">Pages <span>&#8209;</span></a>
-                                <ul class="dropdown-content position-absolute py-2 px-3">
-                                  <li class="mb-1"><a href="#">Pricing Plans</a></li>
-                                  <li class="mb-1"><a href="#">Our Services</a></li>
-                                  <li class="mb-1"><a href="#">Careers</a></li>
-                                </ul>
-                              </li>
-                              
-                            </ul>
-                            <div class="header_buttons d-flex align-items-center gap-3">
-                              <div class="contact_number gap-2 d-flex">
-                                <span><i class="fa-solid fa-phone"></i></span><a href="tel:+(088) 123 456 789" class="text-decoration-none">+(088) 123 456 789</a>
-                              </div>
-                              <div class="account_mange d-flex gap-2">
-                                <div class="user_img"><i class="fa-regular fa-circle-user"></i></div>
-                                <div class="signIn">
-                                  <a href="#" class="text-decoration-none">Login</a>
-                                  <span>/</span>
-                                  <a href="#" class="text-decoration-none">Register</a>
-                                </div>
-                              </div>
-                              <button class="d-flex align-items-center rounded-pill py-2 px-3">Add Property <span class="ms-1 fs-6">&#8599;</span></button>
-                            </div>
-                          </div>
-                        </div>
-                      </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+                  <li class="nav-item position-relative">
+                    <a href="#" class="nav-link">Pages</a>
 
-    <div class="main">
+                  </li>
 
-      <section class="hero_section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="heroSection_main position-relative overflow-hidden py-3 px-2">
-                  <div class="row">
-                    <div class="col-md-5">
-                        <div class="search-box">
-                          <input type="text" id="search" placeholder="Enter an address, neighborhood, city, or ZIP code" />
-                        </div>
+                </ul>
+                <div class="header_buttons d-flex align-items-center gap-3">
+                  <div class="contact_number gap-2 d-flex">
+                    <span><i class="fa-solid fa-phone"></i></span><a href="tel:+(088) 123 456 789"
+                      class="text-decoration-none">+(088) 123 456 789</a>
+                  </div>
+                  <div class="account_mange d-flex gap-2">
+                    <div class="user_img"><i class="fa-regular fa-circle-user"></i></div>
+                    <div class="signIn">
+                      <a href="#" class="text-decoration-none">Login</a>
+                      <span>/</span>
+                      <a href="#" class="text-decoration-none">Register</a>
                     </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-3"></div>
+                  </div>
+                  <button class="d-flex align-items-center rounded-pill py-2 px-3">Add Property <span
+                      class="ms-1 fs-6">&#8599;</span></button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero_section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="heroSection_main position-relative overflow-hidden py-3 px-2">
+              <div class="row m-0 align-items-center">
+                <div class="col-md-5">
+                  <div class="search-box d-flex align-items-baseline pe-3">
+                    <i class="fa-regular fa-envelope-open"></i>
+                    <input type="text" id="search" class="w-100"
+                      placeholder="Enter an address, neighborhood, city, or ZIP code" />
                   </div>
                 </div>
+                <div class="col-md-4">
+                  <div class="select-box select-type pe-3">
+                    <select id="looking-for" class="w-100">
+                      <option value="city1">Type</option>
+                      <option value="office">Office</option>
+                      <option value="apartment">Apartment</option>
+                      <option value="house">House</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="filtered_area d-flex align-items-center justify-content-between">
+                    <div class="advanced">
+                      <span class="muted-text">
+                        <i class="fa-solid fa-sliders me-1"></i>
+                        Advanced
+                      </span>
+                    </div>
+                    <button
+                      class="search-btn w-25 py-2 d-flex justify-content-center align-items-center rounded-circle gap-3">
+                      <span><i class="fa-solid fa-magnifying-glass search-icon"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- -------------- FEATURED LISTING ------------  -->
+    <section class="featured_Listings">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title d-flex justify-content-between align-items-end mb-5">
+              <div class="title_text">
+                <h1 class="text-start fw-bold">Discover Our Featured Listings</h1>
+                <p class="text-start">Aliquam lacinia diam quis lacus euismod</p>
+              </div>
+              <a href="#" class="fw-semibold">See All Properties <span>&#8599;</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="featured_listing_slider_main">
+              <div class="featured_listing_slider">
+                <div class="card border-0 mb-5">
+                  <div class="card_main rounded-3 overflow-hidden z-3">
+                    <div class="card_img position-relative">
+                      <img src="./assets/public/images/p2-570x370.jpg.png" alt="Featured Listing"
+                        class="w-100 rounded-3" />
+                      <p class="position-absolute rounded-2 px-3 text-uppercase">Featured</p>
+                      <span class="position-absolute rounded-2 px-3 fw-medium">$4,600</span>
+                    </div>
+                    <div class="card_text py-3">
+                      <h3>House on the Hollywood</h3>
+                      <p class="mb-0">374 Johnson Ave</p>
+                      <div class="area d-flex gap-4 align-items-center">
+                        <span>9 Beds</span>
+                        <span>3 Baths</span>
+                        <span>600 sqft</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card border-0 mb-5">
+                  <div class="card_main rounded-3 overflow-hidden z-3">
+                    <div class="card_img position-relative">
+                      <img src="./assets/public/images/p6-570x370.jpg.png" alt="Featured Listing"
+                        class="w-100 rounded-3" />
+                      <p class="position-absolute rounded-2 px-3 text-uppercase">Featured</p>
+                      <span class="position-absolute rounded-2 px-3 fw-medium">$5,800</span>
+                    </div>
+                    <div class="card_text py-3">
+                      <h3>Comfortable Villa Green</h3>
+                      <p class="mb-0">374 Johnson Ave</p>
+                      <div class="area d-flex gap-4 align-items-center">
+                        <span>9 Beds</span>
+                        <span>3 Baths</span>
+                        <span>600 sqft</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card border-0 mb-5">
+                  <div class="card_main rounded-3 overflow-hidden z-3">
+                    <div class="card_img position-relative">
+                      <img src="./assets/public/images/p9-570x370.jpg.png" alt="Featured Listing"
+                        class="w-100 rounded-3" />
+                      <p class="position-absolute rounded-2 px-3 text-uppercase">Featured</p>
+                      <span class="position-absolute rounded-2 px-3 fw-medium">$2,500</span>
+                    </div>
+                    <div class="card_text py-3">
+                      <h3>Quality House For Sale</h3>
+                      <p class="mb-0">374 Johnson Ave</p>
+                      <div class="area d-flex gap-4 align-items-center">
+                        <span>9 Beds</span>
+                        <span>3 Baths</span>
+                        <span>600 sqft</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card border-0 mb-5">
+                  <div class="card_main rounded-3 overflow-hidden z-3">
+                    <div class="card_img position-relative">
+                      <img src="./assets/public/images/p2-570x370.jpg.png" alt="Featured Listing"
+                        class="w-100 rounded-3" />
+                      <p class="position-absolute rounded-2 px-3 text-uppercase">Featured</p>
+                      <span class="position-absolute rounded-2 px-3 fw-medium">$4,600</span>
+                    </div>
+                    <div class="card_text py-3">
+                      <h3>House on the Hollywood</h3>
+                      <p class="mb-0">374 Johnson Ave</p>
+                      <div class="area d-flex gap-4 align-items-center">
+                        <span>9 Beds</span>
+                        <span>3 Baths</span>
+                        <span>600 sqft</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- -------------- Explore Cities ------------  -->
+    <section class="explore_cities">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title d-flex justify-content-between align-items-end mb-5">
+              <div class="title_text">
+                <h1 class="text-start fw-bold">Explore Cities</h1>
+                <p class="text-start">Aliquam lacinia diam quis lacus euismod</p>
+              </div>
+              <a href="#" class="fw-semibold">All Cities <span>&#8599;</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="explore_cities_slider_main">
+              <div class="explore_cities_slider">
+
+
+                <div class="city_card border-0 mb-5">
+                  <div class="card_main rounded-3 overflow-hidden z-3">
+                    <div class="card_img position-relative">
+                      <img src="./assets/public/images/city1.jpg.png" alt="city_map" class="w-100 rounded-3" />
+                    </div>
+                    <div class="card_text py-3">
+                      <h3>Los Angeles</h3>
+                      <p class="mb-0">2 Properties</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="city_card border-0 mb-5">
+                  <div class="card_main rounded-3 overflow-hidden z-3">
+                    <div class="card_img position-relative">
+                      <img src="./assets/public/images/city2.jpg.png" alt="City_map" class="w-100 rounded-3" />
+                    </div>
+                    <div class="card_text py-3">
+                      <h3>San Francisco</h3>
+                      <p class="mb-0">1 Properties</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="city_card border-0 mb-5">
+                  <div class="card_main rounded-3 overflow-hidden z-3">
+                    <div class="card_img position-relative">
+                      <img src="./assets/public/images/city3.jpg.png" alt="city_map" class="w-100 rounded-3" />
+                    </div>
+                    <div class="card_text py-3">
+                      <h3>New York</h3>
+                      <p class="mb-0">1 Properties</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="city_card border-0 mb-5">
+                  <div class="card_main rounded-3 overflow-hidden z-3">
+                    <div class="card_img position-relative">
+                      <img src="./assets/public/images/city4.jpg.png" alt="City_map" class="w-100 rounded-3" />
+                    </div>
+                    <div class="card_text py-3">
+                      <h3>Chicago</h3>
+                      <p class="mb-0">1 Property</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="city_card border-0 mb-5">
+                  <div class="card_main rounded-3 overflow-hidden z-3">
+                    <div class="card_img position-relative">
+                      <img src="./assets/public/images/city2.jpg.png" alt="City_map" class="w-100 rounded-3" />
+                    </div>
+                    <div class="card_text py-3">
+                      <h3>San Francisco</h3>
+                      <p class="mb-0">1 Properties</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------- CUSTORMER SECTION ------------  -->
+
+    <section class="customer_sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title">
+              <div class="title_text">
+                <h1 class="text-center fw-bold">See how Realtor can help</h1>
+                <p class="text-center">Aliquam lacinia diam quis lacus euismod</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="card border-0 rounded-3 d-flex flex-column align-items-center py-4 px-3">
+              <div class="card_img">
+                <img src="./assets/public/images/icon6.svg.png" alt="Find Home Icon" />
+              </div>
+              <div class="card_text my-3 text-center">
+                <h2>Buy a property</h2>
+                <p class="text-center fw-normal">Nullam sollicitudin blandit eros eu pretium.</p>
+                <p class="text-center fw-normal">Nullam maximus ultricies auctor.</p>
+              </div>
+              <button class="py-3 px-4 border-1 rounded-3 cursor">Find a home<span class="ms-1">&#8599;</span></button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 rounded-3 d-flex flex-column align-items-center py-4 px-3">
+              <div class="card_img">
+                <img src="./assets/public/images/icon5.svg.png" alt="Find Home Icon" />
+              </div>
+              <div class="card_text my-3 text-center">
+                <h2>Sell a property</h2>
+                <p class="text-center fw-normal">Nullam sollicitudin blandit eros eu pretium.</p>
+                <p class="text-center fw-normal">Nullam maximus ultricies auctor.</p>
+              </div>
+              <button class="py-3 px-4 border-1 rounded-3 cursor">Place an ad<span class="ms-1">&#8599;</span></button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 rounded-3 d-flex flex-column align-items-center py-4 px-3">
+              <div class="card_img">
+                <img src="./assets/public/images/icon4.svg.png" alt="Find Home Icon" />
+              </div>
+              <div class="card_text my-3 text-center">
+                <h2>Rent a property</h2>
+                <p class="text-center fw-normal">Nullam sollicitudin blandit eros eu pretium.</p>
+                <p class="text-center fw-normal">Nullam maximus ultricies auctor.</p>
+              </div>
+              <button class="py-3 px-4 border-1 rounded-3 cursor">Find a rental<span
+                  class="ms-1">&#8599;</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------ Dream Home Section -----------------  -->
+
+    <section class="dream_section">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-6">
+            <div class="dream_home_img w-100  position-relative">
+              <div class="watch_video rounded-3 align-items-end py-2 px-3 d-flex gap-2 position-absolute">
+                <img src="./assets/public/images/span.popup-video-inner.png" alt="watch_video">
+                <p>Watch Video</p>
+              </div>
+              <div class="dream_home_detail position-absolute ms-4 w-75">
+                <img class="w-100" src="./assets/public/images/dream_home_detail.png" alt="dream_home">
+            </div>
+              <img src="./assets/public/images/h21.jpg.png" class="w-100" alt="Dream_home">
+              
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="dream_home_text">
+              <h1 class="fw-bold">With Us Help You Find
+                Your Dream Home</h1>
+                <p>As the complexity of buildings to increase, the field
+                  of architecture.</p>
+
+                  <div class="counter d-flex flex-column gap-3">
+                    <div class="award">
+                      <h1 class="m-0 fw-semibold">400</h1>
+                      <span class="m-0">Award Winning</span>
+                    </div>
+                    <div class="award">
+                      <h1 class="m-0 fw-semibold">200 +</h1>
+                      <span class="m-0">Property Ready</span>
+                    </div>
+                    <div class="award">
+                      <h1 class="m-0 fw-semibold">1K +</h1>
+                      <span class="m-0">Happy Customer</span>
+                    </div>
+                  </div>
+
+                  <button class="py-3 px-4 border-0 rounded-3 cursor mt-4">See More <span class="ms-1">&#8599;</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+        <!-- -------------- Testimonials SECTION ------------  -->
+        <section class="testimonials_sec">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="title">
+                  <div class="title_text">
+                    <h1 class="fw-bold text-center">Testimonials</h1>
+                    <p class="text-center">Aliquam lacinia diam quis lacus euismod</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="testimonials_slider">
+                  <div class="testimonials_slider_main">
+                    <div class="testimonials_item d-flex flex-column align-items-center">
+                      <span></span>
+                      <h2 class="fw-semibold text-center mx-auto lh-lg">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h2>
+                      <h3 class="fw-semibold text-center">Ali Tufan</h3>
+                      <p class="text-center">Product Manager</p>
+                      <div class="client_img rounded-circle">
+                        <img width="w-100 rounded-circle" src="./assets/public/images/m8.jpg.png" class="user-image">
+                      </div>
+                    </div>
+                    <div class="testimonials_item d-flex flex-column align-items-center">
+                      <span></span>
+                      <h2 class="fw-semibold text-center mx-auto lh-lg">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h2>
+                      <h3 class="fw-semibold text-center">Ali Tufan</h3>
+                      <p class="text-center">Product Manager</p>
+                      <div class="client_img rounded-circle">
+                        <img  width="w-100 rounded-circle" src="./assets/public/images/m6.jpg.png" class="user-image">
+                      </div>
+                    </div>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+    
+
+
+    <!-- -------------- Our Agent SECTION ------------  -->
+
+    <section class="our_agents">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title d-flex align-items-center justify-content-md-between flex-row flex-md-row">
+              <div class="title_text">
+                <h1 class="text-center text-md-start">Explore Apartment Types</h1>
+                <p class="text-center text-md-start">Lorem ipsum dolor sit amet,</p>
+              </div>
+              <a href="">All Types <span>&#8599;</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="our_agents_main mt-4">
+          <div class="item mb-5">
+            <div class="item_main rounded-3 z-3 overflow-hidden">
+              <div class="item_img w-100">
+                <img class="w-100" src="./assets/public/images/agent.png" alt="Our_Developer" />
+              </div>
+              <div class="item_text py-3">
+                <h3>Ralph Johnson</h3>
+                <p>Manager</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item mb-5">
+            <div class="item_main rounded-3 z-3 overflow-hidden">
+              <div class="item_img w-100">
+                <img class="w-100" src="./assets/public/images/agent1.png" alt="Our_Developer" />
+              </div>
+              <div class="item_text py-3">
+                <h3>Lori Ramos</h3>
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-5">
+            <div class="item_main rounded-3 z-3 overflow-hidden">
+              <div class="item_img w-100">
+                <img class="w-100" src="./assets/public/images/agent2.png" alt="Our_Developer" />
+              </div>
+              <div class="item_text py-3">
+                <h3>Jack Graham</h3>
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-5">
+            <div class="item_main rounded-3 z-3 overflow-hidden">
+              <div class="item_img w-100">
+                <img class="w-100" src="./assets/public/images/agent3.png" alt="Our_Developer" />
+              </div>
+              <div class="item_text py-3">
+                <h3>Augusta Silva</h3>
+                <p>Leader Homez</p>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-5">
+            <div class="item_main rounded-3 z-3 overflow-hidden">
+              <div class="item_img w-100">
+                <img class="w-100" src="./assets/public/images/agent4.png" alt="Our_Developer" />
+              </div>
+              <div class="item_text py-3">
+                <h3>Albert Flores</h3>
+                <p>Marketig</p>
+              </div>
+            </div>
+          </div>
+          <div class="item mb-5">
+            <div class="item_main rounded-3 z-3 overflow-hidden">
+              <div class="item_img w-100">
+                <img class="w-100" src="./assets/public/images/agent2.png" alt="Our_Developer" />
+              </div>
+              <div class="item_text py-3">
+                <h3>Jack Graham</h3>
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
+    <!-- -------------- brand slider SECTION start   ------------  -->
+
+
+    <section class="brand_slider_sec pt-4">
+      <div class="container">
+        <div class="title">
+          <div class="title_text">
+            <p class="text-center">Trusted by the world’s best</p>
+          </div>
+        </div>
+        <div class="brand_slider mt-5 overflow-hidden">
+          <div class="brand_slider_main">
+            <div class="brand_logo d-flex justify-content-center">
+              <img src="./assets/public/images/brand_logo.png" alt="Brand_logo">
+            </div>
+            <div class="brand_logo d-flex justify-content-center">
+              <img src="./assets/public/images/brand_logo1.png" alt="Brand_logo">
+            </div>
+            <div class="brand_logo d-flex justify-content-center">
+              <img src="./assets/public/images/brand_logo2.png" alt="Brand_logo">
+            </div>
+            <div class="brand_logo d-flex justify-content-center">
+              <img src="./assets/public/images/brand_logo3.png" alt="Brand_logo">
+            </div>
+            <div class="brand_logo d-flex justify-content-center">
+              <img src="./assets/public/images/brand_logo4.png" alt="Brand_logo">
+            </div>
+            <div class="brand_logo d-flex justify-content-center">
+              <img src="./assets/public/images/brand_logo5.png" alt="Brand_logo">
+            </div>
+            <div class="brand_logo d-flex justify-content-center">
+              <img src="./assets/public/images/brand_logo2.png" alt="Brand_logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="footer_contact_detail">
+            <div class="footer_logo mb-4">
+              <img src="./assets/public/images/logo.png" alt="footer_logo">
+            </div>
+            <div class="address align-items-end d-flex gap-5 mb-4">
+              <div class="number">
+                <p class="m-1">Total Free Customer Care</p>
+                <h3>
+                  <a href="tel:+(088) 123 456 789">+(088) 123 456 789</a>
+                </h3>
+              </div>
+              <div class="email">
+                <p class="mb-1">Live Support?</p>
+                <h3><a href="mail:hi@homez.com">hi@homez.com</a></h3>
+              </div>
+            </div>
+            <div class="apps_detail mb-4">
+              <h3>Apps</h3>
+              <div class="devices d-flex gap-2">
+                <div class="apps_detail_main d-flex gap-3 rounded-2 py-2 px-3 align-items-center">
+                  <div class="device_logo">
+                    <span><i class="fa-brands fa-apple"></i></span>
+                  </div>
+                  <div class="device_name d-flex flex-column">
+                    <p class="mb-0">Download on the</p>
+                    <h3>App Store</h3>
+                  </div>
+                </div>
+                <div class="apps_detail_main d-flex gap-3 rounded-2 py-2 px-3 align-items-center">
+                  <div class="device_logo">
+                    <span><i class="fa-brands fa-google-play"></i></span>
+                  </div>
+                  <div class="device_name d-flex flex-column">
+                    <p class="mb-0">Get in on</p>
+                    <h3>Google Play</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="social">
+              <h3>Follow us on social media</h3>
+              <div class="socail_platform d-flex gap-4 mt-3">
+                <a href=""><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                <a href=""><span><i class="fa-brands fa-twitter"></i></span></a>
+                <a href=""><span><i class="fa-brands fa-instagram"></i></span></a>
+                <a href="">
+                  <span><i class="fa-brands fa-linkedin-in"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-12">
+              <div class="footer_input mb-4">
+                <h3 class="fw-semibold text-capitalize mb-3">keep yourself Up to Date</h3>
+                <div class="input-container position-relative w-100">
+                  <input type="text" class="w-100 rounded-3 py-3 px-4" placeholder="Enter your email"> 
+                  <button type="submit" class="position-absolute me-3 border-0 ">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="footer_menu_left">
+                <h3 class="mb-4">Popular Search</h3>
+                <div class="footer_menu_items">
+                  <ul class="p-0">
+                    <li class="mb-3">
+                      <a href="">Apartment for Sale</a>
+                    </li class="mb-3">
+                    <li class="mb-3">
+                      <a href="">Apartment for Rent</a>
+                    </li class="mb-3">
+                    <li class="mb-3">
+                      <a href="">Office for Sale</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="">Office for Rent</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="footer_menu_left">
+                <h3 class="mb-4">Quick Links</h3>
+                <div class="footer_menu_items">
+                  <ul class="p-0">
+                    <li class="mb-3">
+                      <a href="">Terms of Use</a>
+                    </li class="mb-3">
+                    <li class="mb-3">
+                      <a href="">Priacy Policy</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="">Pricing Plans</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="">Our Services</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="footer_menu_left">
+                <h3 class="mb-4">Discovery</h3>
+                <div class="footer_menu_items">
+                  <ul class="p-0">
+                    <li class="mb-3">
+                      <a href="">Chicago</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="">New Jersey</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="">Los Angeles</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="">New York</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="">California</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>  
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="footer_bottom">
+            <div class="footer_bottom_main d-flex justify-content-between flex-column flex-sm-row align-items-center">
+              <div class="copywrite fw-normal">
+                <span>&copy; Homez – All rights reserved</span>
+              </div>
+              <div class="footer_social d-flex gap-4">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Terms</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </footer>
 
 
 
+  <!-- ---------------------------- Script Start ---------------------------  -->
+  <!-- -------------- jquery start --------------  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- ---------------------------- Script Start ---------------------------  -->
-    <!-- -------------- jquery start --------------  -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- -------------- Slick start --------------  -->
-    <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
-       <!-- -------------- bootstrap.js file ----------------  -->
-       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-       <script src="./assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+  <!-- -------------- Slick start --------------  -->
+  <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+  <!-- -------------- bootstrap.js file ----------------  -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="./assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

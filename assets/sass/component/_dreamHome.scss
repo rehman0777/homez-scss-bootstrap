@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+
+.dream_home_img{
+    .watch_video{
+        background-color: $white-clr;
+        box-shadow: 0px 0px 50px 0px #181A2012;
+        right: 0;
+        top: 90px;
+        animation: one 2s infinite alternate;
+    }
+      
+      @keyframes one {
+        0% {
+          transform: rotateX(0);
+          transform: translate(0, 0); 
+        }
+        100% {
+          transform: rotateX(50deg);
+          transform: translate(20px, 50px);
+        }
+      }
+    .dream_home_detail{
+        bottom: 40px;
+    }
+    
+}
+.dream_home_text{
+
+    .counter{
+        .award{
+            span{
+                @include typography();
+            }
+        }
+    }
+
+    button{
+        @include fill_Button();
+    }
+}

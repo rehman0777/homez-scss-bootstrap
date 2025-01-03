@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+.our_agents{
+      .item {
+        .item_main {
+          width: 90%;
+          @media (max-width: 600px) {
+            width: 100%;
+          }
+
+          }
+        }
+      }
