@@ -58,6 +58,7 @@ header {
     @include outline_Button($border-clr: $black-clr);
     @include typography();
     outline: $outline_auto;
+   
 
     span {
       color: $black-clr;
@@ -67,6 +68,48 @@ header {
       span {
         color: $white-clr;
       }
+    }
+  }
+}
+
+.navbar-toggler {
+  width: 30px; 
+  height: 25px; 
+  position: $position_relative;
+  border: $border_none;
+  
+  &:active,
+  &:focus{
+    border: $border_none;
+    outline: $outline_none;
+    box-shadow: none;
+  }
+
+  .line {
+    position: $position_absolute;
+    height: 3px; 
+    background-color: $black-clr; 
+    transition: all 0.3s ease; 
+  }
+  
+ 
+  .line1 {
+    top: 0;
+    width: 100%;
+    right: 0;
+  }
+
+  .line2 {
+    top: 50%;
+    width: 70%;
+    right: 0;
+  }
+  &:hover {
+    .line1 {
+      width: 70%; 
+    }
+    .line2 {
+      width: 80%; 
     }
   }
 }

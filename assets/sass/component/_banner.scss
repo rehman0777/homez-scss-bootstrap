@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+.banner_section{
+    background: url(../../../assets/public/images/banner.png);
+    @include backgroundImage();
+
+    .banner_main{
+        h1,p{
+            color: $white-clr;
+        }
+        button{
+            @include fill_Button( $white-clr, $black-clr, $black-clr, $white-clr, $text-clr, $text-clr);
+        }
+    }
+}

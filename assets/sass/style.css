@@ -169,6 +169,40 @@ header {
   color: #FFFFFF;
 }
 
+.navbar-toggler {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  border: none;
+}
+.navbar-toggler:active, .navbar-toggler:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler .line {
+  position: absolute;
+  height: 3px;
+  background-color: #181A20;
+  transition: all 0.3s ease;
+}
+.navbar-toggler .line1 {
+  top: 0;
+  width: 100%;
+  right: 0;
+}
+.navbar-toggler .line2 {
+  top: 50%;
+  width: 70%;
+  right: 0;
+}
+.navbar-toggler:hover .line1 {
+  width: 70%;
+}
+.navbar-toggler:hover .line2 {
+  width: 80%;
+}
+
 .hero_section {
   background: url(../../../assets/public/images/heroSection.png);
   background-repeat: repeat;
@@ -197,7 +231,6 @@ header {
   position: relative;
 }
 .hero_section .heroSection_main .select-box select {
-  padding: 8px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -220,6 +253,11 @@ header {
   background: #181A20;
   z-index: 10;
 }
+@media (max-width: 768px) {
+  .hero_section .heroSection_main .select-box::before {
+    right: 4%;
+  }
+}
 .hero_section .heroSection_main .search-box::after,
 .hero_section .heroSection_main .select-box::after {
   content: "";
@@ -234,7 +272,7 @@ header {
   display: block;
   margin-left: 10px;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero_section .heroSection_main .search-box::after,
   .hero_section .heroSection_main .select-box::after {
     display: none;
@@ -429,6 +467,29 @@ header {
 }
 .testimonials_sec .testimonials_item .client_img img {
   border-radius: 52px;
+}
+
+.banner_section {
+  background: url(../../../assets/public/images/banner.png);
+  background-repeat: repeat;
+  background-size: cover;
+}
+.banner_section .banner_main h1, .banner_section .banner_main p {
+  color: #FFFFFF;
+}
+.banner_section .banner_main button {
+  background-color: #181A20;
+  color: #FFFFFF;
+  border-color: #181A20;
+  cursor: pointer;
+}
+.banner_section .banner_main button:hover {
+  color: #FFFFFF;
+  background-color: #717171;
+  border-color: #717171;
+}
+.banner_section .banner_main button:focus {
+  outline: none;
 }
 
 footer {
