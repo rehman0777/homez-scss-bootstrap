@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homez</title>
 
-  <!-- ------------------ Font Awesome Icon ---------------------  -->
-  <link rel="stylesheet" href="./assets/public/icons/fontawesome-free-6.7.1-web/css/all.min.css" />
 
   <!-- ------------------ Font -----------------  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +15,7 @@
     rel="stylesheet" />
   <!-- ---------- Bootstrap file ------------------- -->
   <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/public/icons/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css" />
 
 
   <!-- --------------- Slick Slider ---------  -->
@@ -36,59 +35,58 @@
             <div class="container-fluid">
               <a href="#"><img src="./assets/public/images/logo.svg.png" alt="Logo" /></a>
 
-              <button
-              class="navbar-toggler border-0 cursor" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
-              >
-              <span class="line1 line"></span>
-          <span class="line2 line"></span>
+              <button class="navbar-toggler position-relative border-0 border-0 cursor" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="line1 line position-absolute bg-dark"></span>
+                <span class="line2 line position-absolute bg-dark"></span>
 
               </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header p-4">
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body align-items-start align-items-lg-center m-0">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2 ms-lg-4">
-                  <li class="nav-item position-relative">
-                    <a class="nav-link active" href="#">Home</a>
-                  </li>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2 ms-lg-4">
+                    <li class="nav-item position-relative">
+                      <a class="nav-link fw-semibold text-dark active py-0 mb-3 mb-lg-0" href="#">Home</a>
+                    </li>
 
-                  <li class="nav-item position-relative">
-                    <a href="#" class="nav-link">Listings</a>
-                  </li>
+                    <li class="nav-item position-relative">
+                      <a href="#" class="nav-link fw-semibold text-dark py-0 mb-3 mb-lg-0">Listings</a>
+                    </li>
 
-                  <li class="nav-item position-relative">
-                    <a href="#" class="nav-link">Members</a>
-                  </li>
+                    <li class="nav-item position-relative">
+                      <a href="#" class="nav-link fw-semibold text-dark py-0 mb-3 mb-lg-0">Members</a>
+                    </li>
 
-                  <li class="nav-item position-relative">
-                    <a href="#" class="nav-link">Blog</a>
-                  </li>
+                    <li class="nav-item position-relative">
+                      <a href="#" class="nav-link fw-semibold text-dark py-0 mb-3 mb-lg-0">Blog</a>
+                    </li>
 
-                  <li class="nav-item position-relative">
-                    <a href="#" class="nav-link">Pages</a>
+                    <li class="nav-item position-relative">
+                      <a href="#" class="nav-link fw-semibold text-dark py-0 mb-3 mb-lg-0">Pages</a>
+                    </li>
 
-                  </li>
-
-                </ul>
-                <div class="header_buttons d-flex align-items-center gap-3 flex-column flex-lg-row">
-                  <div class="contact_number gap-2 d-flex">
-                    <span><i class="fa-solid fa-phone"></i></span><a href="tel:+(088) 123 456 789"
-                      class="text-decoration-none">+(088) 123 456 789</a>
-                  </div>
-                  <div class="account_mange d-flex gap-2 align-items-end">
-                    <div class="user_img"><i class="fa-regular fa-circle-user"></i></div>
-                    <div class="signIn">
-                      <a href="#" class="text-decoration-none">Login</a>
-                      <span>/</span>
-                      <a href="#" class="text-decoration-none">Register</a>
+                  </ul>
+                  <div class="header_buttons d-flex align-items-lg-center gap-3 flex-column flex-lg-row">
+                    <div class="contact_number gap-2 d-flex">
+                      <span><i class="bi bi-telephone-fill"></i></span><a href="tel:+(088) 123 456 789"
+                        class="text-decoration-none text-dark fw-semibold">+(088) 123 456 789</a>
                     </div>
+                    <div class="account_mange d-flex gap-2 align-items-end">
+                      <div class="user_img text-dark"><i class="bi bi-person-circle"></i></div>
+                      <div class="signIn">
+                        <a href="#" class="text-decoration-none text-dark fw-semibold">Login</a>
+                        <span>/</span>
+                        <a href="#" class="text-decoration-none text-dark fw-semibold">Register</a>
+                      </div>
+                    </div>
+                    <button class="d-flex d-lg-none fw-semibold d-xl-flex align-items-center rounded-pill py-2 px-3">Add Property
+                      <span class="ms-1 fs-6"><i class="bi bi-arrow-up-right"></i></span></button>
                   </div>
-                  <button class="d-flex d-lg-none d-xl-flex align-items-center rounded-pill py-2 px-3">Add Property <span
-                      class="ms-1 fs-6">&#8599;</span></button>
                 </div>
               </div>
-            </div>
             </div>
           </nav>
         </div>
@@ -97,23 +95,25 @@
   </header>
 
   <main>
+    
+    <!-- -------------- Hero Section start ------------  -->
 
-    <section class="hero_section">
+    <section class="hero_section position-relative">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <div class="heroSection_main position-relative overflow-hidden py-3 px-2">
+            <div class="heroSection_main bg-white rounded-3 position-relative overflow-hidden py-3 px-2">
               <div class="row m-0 align-items-center gap-md-0 gap-4">
                 <div class="col-md-5">
-                  <div class="search-box d-flex align-items-baseline pe-3">
-                    <i class="fa-regular fa-envelope-open"></i>
-                    <input type="text" id="search" class="w-100"
+                  <div class="search-box position-relative d-flex align-items-baseline pe-3">
+                    <i class="bi bi-envelope-open"></i>
+                    <input type="text" id="search" class="w-100 p-2"
                       placeholder="Enter an address, neighborhood, city, or ZIP code" />
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="select-box select-type pe-3">
-                    <select id="looking-for" class="w-100 p-md-2 p-0">
+                  <div class="select-box position-relative select-type pe-3">
+                    <select id="looking-for" class="w-100 p-md-2 p-0 ">
                       <option value="city1">Type</option>
                       <option value="office">Office</option>
                       <option value="apartment">Apartment</option>
@@ -124,14 +124,15 @@
                 <div class="col-md-3">
                   <div class="filtered_area d-flex align-items-center justify-content-between">
                     <div class="advanced">
-                      <span class="muted-text">
+                      <span class="muted-text text-dark">
                         <i class="fa-solid fa-sliders me-1"></i>
                         Advanced
                       </span>
                     </div>
                     <button
-                      class="search-btn px-3 py-2 d-flex justify-content-center align-items-center rounded-circle gap-3">
-                      <span><i class="fa-solid fa-magnifying-glass search-icon"></i></span>
+                      class="search-btn border-0 px-3 py-2 d-flex justify-content-center align-items-center rounded-circle gap-3">
+                      <span>
+                        <i class="bi bi-search search-icon text-white"></i></span>
                     </button>
                   </div>
                 </div>
@@ -141,17 +142,19 @@
         </div>
       </div>
     </section>
+
+
     <!-- -------------- FEATURED LISTING ------------  -->
     <section class="featured_Listings">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="title d-flex justify-content-between align-items-end mb-5">
+            <div class="title d-flex justify-content-between align-items-center mb-md-5 mb-3 flex-column flex-md-row">
               <div class="title_text">
-                <h1 class="text-start fw-bold">Discover Our Featured Listings</h1>
-                <p class="text-start">Aliquam lacinia diam quis lacus euismod</p>
+                <h1 class="text-md-start text-center fw-bold">Discover Our Featured Listings</h1>
+                <p class="mb-0 text-md-start text-center">Aliquam lacinia diam quis lacus euismod</p>
               </div>
-              <a href="#" class="fw-semibold">See All Properties <span>&#8599;</span></a>
+              <a href="#" class="fw-semibold text-dark">See All Properties <span><i class="bi bi-arrow-up-right"></i></span></a>
             </div>
           </div>
         </div>
@@ -164,12 +167,12 @@
                     <div class="card_img position-relative">
                       <img src="./assets/public/images/p2-570x370.jpg.png" alt="Featured Listing"
                         class="w-100 rounded-3" />
-                      <p class="position-absolute rounded-2 px-3 text-uppercase">Featured</p>
-                      <span class="position-absolute rounded-2 px-3 fw-medium">$4,600</span>
+                      <p class="position-absolute rounded-2 px-3 text-uppercase text-white">Featured</p>
+                      <span class="position-absolute rounded-2 px-3 fw-medium text-white bg-white">$4,600</span>
                     </div>
-                    <div class="card_text py-3">
+                    <div class="card_text py-3 bg-white">
                       <h3>House on the Hollywood</h3>
-                      <p class="mb-0">374 Johnson Ave</p>
+                      <p class="mb-0 text-secondary">374 Johnson Ave</p>
                       <div class="area d-flex gap-4 align-items-center">
                         <span>9 Beds</span>
                         <span>3 Baths</span>
@@ -184,12 +187,12 @@
                     <div class="card_img position-relative">
                       <img src="./assets/public/images/p6-570x370.jpg.png" alt="Featured Listing"
                         class="w-100 rounded-3" />
-                      <p class="position-absolute rounded-2 px-3 text-uppercase">Featured</p>
-                      <span class="position-absolute rounded-2 px-3 fw-medium">$5,800</span>
+                      <p class="position-absolute rounded-2 px-3 text-uppercase text-white">Featured</p>
+                      <span class="position-absolute rounded-2 px-3 fw-medium text-dark bg-white">$5,800</span>
                     </div>
-                    <div class="card_text py-3">
+                    <div class="card_text py-3 bg-white">
                       <h3>Comfortable Villa Green</h3>
-                      <p class="mb-0">374 Johnson Ave</p>
+                      <p class="mb-0 text-secondary">374 Johnson Ave</p>
                       <div class="area d-flex gap-4 align-items-center">
                         <span>9 Beds</span>
                         <span>3 Baths</span>
@@ -204,12 +207,12 @@
                     <div class="card_img position-relative">
                       <img src="./assets/public/images/p9-570x370.jpg.png" alt="Featured Listing"
                         class="w-100 rounded-3" />
-                      <p class="position-absolute rounded-2 px-3 text-uppercase">Featured</p>
-                      <span class="position-absolute rounded-2 px-3 fw-medium">$2,500</span>
+                      <p class="position-absolute rounded-2 px-3 text-uppercase text-white">Featured</p>
+                      <span class="position-absolute rounded-2 px-3 fw-medium text-dark bg-white">$2,500</span>
                     </div>
-                    <div class="card_text py-3">
+                    <div class="card_text py-3 bg-white">
                       <h3>Quality House For Sale</h3>
-                      <p class="mb-0">374 Johnson Ave</p>
+                      <p class="mb-0 text-secondary">374 Johnson Ave</p>
                       <div class="area d-flex gap-4 align-items-center">
                         <span>9 Beds</span>
                         <span>3 Baths</span>
@@ -224,12 +227,12 @@
                     <div class="card_img position-relative">
                       <img src="./assets/public/images/p2-570x370.jpg.png" alt="Featured Listing"
                         class="w-100 rounded-3" />
-                      <p class="position-absolute rounded-2 px-3 text-uppercase">Featured</p>
-                      <span class="position-absolute rounded-2 px-3 fw-medium">$4,600</span>
+                      <p class="position-absolute rounded-2 px-3 text-uppercase text-white">Featured</p>
+                      <span class="position-absolute rounded-2 px-3 fw-medium text-dark bg-white">$4,600</span>
                     </div>
-                    <div class="card_text py-3">
+                    <div class="card_text py-3 text-white">
                       <h3>House on the Hollywood</h3>
-                      <p class="mb-0">374 Johnson Ave</p>
+                      <p class="mb-0 text-secondary">374 Johnson Ave</p>
                       <div class="area d-flex gap-4 align-items-center">
                         <span>9 Beds</span>
                         <span>3 Baths</span>
@@ -247,16 +250,16 @@
 
 
     <!-- -------------- Explore Cities ------------  -->
-    <section class="explore_cities">
+    <section class="explore_cities py-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="title d-flex justify-content-between align-items-end mb-5">
+            <div class="title d-flex justify-content-between  align-items-center flex-column flex-md-row mb-md-5 mb-3">
               <div class="title_text">
-                <h1 class="text-start fw-bold">Explore Cities</h1>
-                <p class="text-start">Aliquam lacinia diam quis lacus euismod</p>
+                <h1 class="text-md-start text-center fw-bold">Explore Cities</h1>
+                <p class="mb-0 text-md-start">Aliquam lacinia diam quis lacus euismod</p>
               </div>
-              <a href="#" class="fw-semibold">All Cities <span>&#8599;</span></a>
+              <a href="#" class="fw-semibold text-dark">All Cities <span><i class="bi bi-arrow-up-right"></i></span></a>
             </div>
           </div>
         </div>
@@ -265,7 +268,6 @@
             <div class="explore_cities_slider_main">
               <div class="explore_cities_slider">
 
-
                 <div class="city_card border-0 mb-5">
                   <div class="card_main rounded-3 overflow-hidden z-3">
                     <div class="card_img position-relative">
@@ -273,7 +275,7 @@
                     </div>
                     <div class="card_text py-3">
                       <h3>Los Angeles</h3>
-                      <p class="mb-0">2 Properties</p>
+                      <p class="mb-0 text-secondary">2 Properties</p>
                     </div>
                   </div>
                 </div>
@@ -284,7 +286,7 @@
                     </div>
                     <div class="card_text py-3">
                       <h3>San Francisco</h3>
-                      <p class="mb-0">1 Properties</p>
+                      <p class="mb-0 text-secondary">1 Properties</p>
                     </div>
                   </div>
                 </div>
@@ -296,7 +298,7 @@
                     </div>
                     <div class="card_text py-3">
                       <h3>New York</h3>
-                      <p class="mb-0">1 Properties</p>
+                      <p class="mb-0 text-secondary">1 Properties</p>
                     </div>
                   </div>
                 </div>
@@ -308,7 +310,7 @@
                     </div>
                     <div class="card_text py-3">
                       <h3>Chicago</h3>
-                      <p class="mb-0">1 Property</p>
+                      <p class="mb-0 text-secondary">1 Property</p>
                     </div>
                   </div>
                 </div>
@@ -319,7 +321,7 @@
                     </div>
                     <div class="card_text py-3">
                       <h3>San Francisco</h3>
-                      <p class="mb-0">1 Properties</p>
+                      <p class="mb-0 text-secondary">1 Properties</p>
                     </div>
                   </div>
                 </div>
@@ -345,44 +347,44 @@
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-md-4">
-            <div class="card border-0 rounded-3 d-flex flex-column align-items-center py-4 px-3">
-              <div class="card_img">
-                <img src="./assets/public/images/icon6.svg.png" alt="Find Home Icon" />
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="card bg-white border-0 rounded-3 d-flex flex-column align-items-center py-4 px-3">
+              <div class="card_img w-100">
+                <img class="w-100" src="./assets/public/images/icon6.svg.png" alt="Find Home Icon" />
               </div>
               <div class="card_text my-3 text-center">
                 <h2>Buy a property</h2>
-                <p class="text-center fw-normal">Nullam sollicitudin blandit eros eu pretium.</p>
-                <p class="text-center fw-normal">Nullam maximus ultricies auctor.</p>
+                <p class="text-center text-dark fw-normal">Nullam sollicitudin blandit eros eu pretium.</p>
+                <p class="text-center text-dark fw-normal">Nullam maximus ultricies auctor.</p>
               </div>
-              <button class="py-3 px-4 border-1 rounded-3 cursor">Find a home<span class="ms-1">&#8599;</span></button>
+              <button class="py-3 px-4 border-1 rounded-3 cursor">Find a home<span class="ms-1"><i class="bi bi-arrow-up-right"></i></span></button>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card border-0 rounded-3 d-flex flex-column align-items-center py-4 px-3">
-              <div class="card_img">
-                <img src="./assets/public/images/icon5.svg.png" alt="Find Home Icon" />
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="card bg-white border-0 rounded-3 d-flex flex-column align-items-center py-4 px-3">
+              <div class="card_img w-100">
+                <img class="w-100" src="./assets/public/images/icon5.svg.png" alt="Find Home Icon" />
               </div>
               <div class="card_text my-3 text-center">
                 <h2>Sell a property</h2>
-                <p class="text-center fw-normal">Nullam sollicitudin blandit eros eu pretium.</p>
-                <p class="text-center fw-normal">Nullam maximus ultricies auctor.</p>
+                <p class="text-center text-dark fw-normal">Nullam sollicitudin blandit eros eu pretium.</p>
+                <p class="text-center text-dark fw-normal">Nullam maximus ultricies auctor.</p>
               </div>
-              <button class="py-3 px-4 border-1 rounded-3 cursor">Place an ad<span class="ms-1">&#8599;</span></button>
+              <button class="py-3 px-4 border-1 rounded-3 cursor">Place an ad<span class="ms-1"><i class="bi bi-arrow-up-right"></i></span></button>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card border-0 rounded-3 d-flex flex-column align-items-center py-4 px-3">
-              <div class="card_img">
-                <img src="./assets/public/images/icon4.svg.png" alt="Find Home Icon" />
+          <div class="col-lg-4 col-md-12">
+            <div class="card bg-white border-0 rounded-3 d-flex flex-column align-items-center py-4 px-3">
+              <div class="card_img w-100">
+                <img class="w-100" src="./assets/public/images/icon4.svg.png" alt="Find Home Icon" />
               </div>
               <div class="card_text my-3 text-center">
                 <h2>Rent a property</h2>
-                <p class="text-center fw-normal">Nullam sollicitudin blandit eros eu pretium.</p>
-                <p class="text-center fw-normal">Nullam maximus ultricies auctor.</p>
+                <p class="text-center text-dark fw-normal">Nullam sollicitudin blandit eros eu pretium.</p>
+                <p class="text-center text-dark fw-normal">Nullam maximus ultricies auctor.</p>
               </div>
               <button class="py-3 px-4 border-1 rounded-3 cursor">Find a rental<span
-                  class="ms-1">&#8599;</span></button>
+                  class="ms-1"><i class="bi bi-arrow-up-right"></i></span></button>
             </div>
           </div>
         </div>
@@ -395,41 +397,43 @@
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-md-6">
-            <div class="dream_home_img w-100  position-relative">
-              <div class="watch_video rounded-3 align-items-end py-2 px-3 d-flex gap-2 position-absolute">
+            <div class="dream_home_img w-100 overflow-hidden position-relative">
+              <div class="watch_video bg-white rounded-3 align-items-end py-2 px-3 d-flex gap-2 position-absolute">
                 <img src="./assets/public/images/span.popup-video-inner.png" alt="watch_video">
                 <p>Watch Video</p>
               </div>
               <div class="dream_home_detail position-absolute ms-4 w-75">
                 <img class="w-100" src="./assets/public/images/dream_home_detail.png" alt="dream_home">
-            </div>
+              </div>
               <img src="./assets/public/images/h21.jpg.png" class="w-100" alt="Dream_home">
-              
+
             </div>
           </div>
           <div class="col-md-5">
             <div class="dream_home_text">
               <h1 class="fw-bold">With Us Help You Find
                 Your Dream Home</h1>
-                <p>As the complexity of buildings to increase, the field
-                  of architecture.</p>
+              <p>As the complexity of buildings to increase, the field
+                of architecture.</p>
 
-                  <div class="counter d-flex flex-column gap-3">
-                    <div class="award">
-                      <h1 class="m-0 fw-semibold">400</h1>
-                      <span class="m-0">Award Winning</span>
-                    </div>
-                    <div class="award">
-                      <h1 class="m-0 fw-semibold">200 +</h1>
-                      <span class="m-0">Property Ready</span>
-                    </div>
-                    <div class="award">
-                      <h1 class="m-0 fw-semibold">1K +</h1>
-                      <span class="m-0">Happy Customer</span>
-                    </div>
-                  </div>
+              <div class="counter d-flex flex-column gap-3">
+                <div class="award" data-target="400">
+                  <h1 class="m-0 fw-semibold"><span>0</span></h1>
+                  <p class="m-0">Award Winning</p>
+                </div>
+                <div class="award" data-target="200">
+                  <h1 class="m-0 fw-semibold"><span>0</span><i class="bi bi-plus"></i></h1>
+                  <p class="m-0">Property Ready</p>
+                </div>
+                <div class="award" data-target="1000">
+                  <h1 class="m-0 fw-semibold"><span>0</span><i class="bi bi-plus"></i></h1>
+                  <p class="m-0">Happy Customer</p>
+                </div>
+              </div>
 
-                  <button class="py-3 px-4 border-0 rounded-3 cursor mt-4">See More <span class="ms-1">&#8599;</span></button>
+
+              <button class="py-3 px-4 border-0 rounded-3 cursor mt-4">See More <span
+                  class="ms-1"><i class="bi bi-arrow-up-right"></i></span></button>
             </div>
           </div>
         </div>
@@ -437,50 +441,82 @@
     </section>
 
 
-        <!-- -------------- Testimonials SECTION ------------  -->
-        <section class="testimonials_sec">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="title">
-                  <div class="title_text">
-                    <h1 class="fw-bold text-center">Testimonials</h1>
-                    <p class="text-center">Aliquam lacinia diam quis lacus euismod</p>
-                  </div>
-                </div>
+    <!-- -------------- Testimonials SECTION ------------  -->
+    <section class="testimonials_sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title">
+              <div class="title_text">
+                <h1 class="fw-bold text-center">Testimonials</h1>
+                <p class="text-center">Aliquam lacinia diam quis lacus euismod</p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="testimonials_slider">
-                  <div class="testimonials_slider_main">
-                    <div class="testimonials_item d-flex flex-column align-items-center">
-                      <span></span>
-                      <h2 class="fw-semibold text-center mx-auto lh-lg">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h2>
-                      <h3 class="fw-semibold text-center">Ali Tufan</h3>
-                      <p class="text-center">Product Manager</p>
-                      <div class="client_img rounded-circle">
-                        <img width="w-100 rounded-circle" src="./assets/public/images/m8.jpg.png" class="user-image">
-                      </div>
-                    </div>
-                    <div class="testimonials_item d-flex flex-column align-items-center">
-                      <span></span>
-                      <h2 class="fw-semibold text-center mx-auto lh-lg">What a great experience! I have visited one of the workshops and attended a masterclass, and both were super useful for young designers. Highly recommended.</h2>
-                      <h3 class="fw-semibold text-center">Ali Tufan</h3>
-                      <p class="text-center">Product Manager</p>
-                      <div class="client_img rounded-circle">
-                        <img  width="w-100 rounded-circle" src="./assets/public/images/m6.jpg.png" class="user-image">
-                      </div>
-                    </div>
-                  </div>
-            
-                </div>
-              </div>
-            </div>
-            
           </div>
-        </section>
-    
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="testimonials_slider">
+              <div class="testimonials_slider_main">
+                <div class="testimonials_item d-flex flex-column align-items-center">
+                  <span><i class="bi bi-quote"></i></span>
+                  <h2 class="fw-semibold text-center mx-auto lh-lg">What a great experience! I have visited one of the
+                    workshops and attended a masterclass, and both were super useful for young designers. Highly
+                    recommended.</h2>
+                  <h3 class="fw-semibold text-center">Olivia</h3>
+                  <p class="text-center">Product Manager</p>
+
+                </div>
+                <div class="testimonials_item d-flex flex-column align-items-center">
+                  <span><i class="bi bi-quote"></i></span>
+                  <h2 class="fw-semibold text-center mx-auto lh-lg">What a great experience! I have visited one of the
+                    workshops and attended a masterclass, and both were super useful for young designers. Highly
+                    recommended.</h2>
+                  <h3 class="fw-semibold text-center">Ali Tufan</h3>
+                  <p class="text-center">Product Manager</p>
+
+                </div>
+                <div class="testimonials_item d-flex flex-column align-items-center">
+                  <span><i class="bi bi-quote"></i></span>
+                  <h2 class="fw-semibold text-center mx-auto lh-lg">What a great experience! I have visited one of the
+                    workshops and attended a masterclass, and both were super useful for young designers. Highly
+                    recommended.</h2>
+                  <h3 class="fw-semibold text-center">Henry</h3>
+                  <p class="text-center">Product Manager</p>
+                </div>
+                <div class="testimonials_item d-flex flex-column align-items-center">
+                  <span><i class="bi bi-quote"></i></span>
+                  <h2 class="fw-semibold text-center mx-auto lh-lg">What a great experience! I have visited one of the
+                    workshops and attended a masterclass, and both were super useful for young designers. Highly
+                    recommended.</h2>
+                  <h3 class="fw-semibold text-center">Emma</h3>
+                  <p class="text-center">Product Manager</p>
+                </div>
+
+              </div>
+
+              <div class="slick-dots-container d-flex justify-content-center gap-2 mt-2">
+                <div class="slick-dot rounded-circle overflow-hidden cursor custom-dot">
+                  <img class="w-100 h-100" src="./assets/public/images/m5.jpg.png" class="user-image">
+                </div>
+                <div class="slick-dot rounded-circle overflow-hidden cursor custom-dot">
+                  <img class="w-100 h-100" src="./assets/public/images/m6.jpg.png" class="user-image">
+                </div>
+                <div class="slick-dot rounded-circle overflow-hidden cursor custom-dot">
+                  <img class="w-100 h-100" src="./assets/public/images/m8.jpg.png" class="user-image">
+                </div>
+                <div class="slick-dot rounded-circle overflow-hidden cursor custom-dot">
+                  <img class="w-100 h-100" src="./assets/public/images/m10.jpg.png" class="user-image">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
 
 
     <!-- -------------- Our Agent SECTION ------------  -->
@@ -489,12 +525,13 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="title d-flex align-items-center justify-content-md-between flex-row flex-md-row">
+            <div
+              class="title d-flex align-items-center flex-column flex-md-row justify-content-md-between flex-row flex-md-row">
               <div class="title_text">
-                <h1 class="text-center text-md-start">Explore Apartment Types</h1>
-                <p class="text-center text-md-start">Lorem ipsum dolor sit amet,</p>
+                <h1 class="text-center fw-bold text-md-start">Explore Apartment Types</h1>
+                <p class="mb-0 text-center text-md-start">Lorem ipsum dolor sit amet,</p>
               </div>
-              <a href="">All Types <span>&#8599;</span></a>
+              <a href="" class="text-dark fw-bold">All Types <span><i class="bi bi-arrow-up-right"></i></span></a>
             </div>
           </div>
         </div>
@@ -505,7 +542,7 @@
                 <img class="w-100" src="./assets/public/images/agent.png" alt="Our_Developer" />
               </div>
               <div class="item_text py-3">
-                <h3>Ralph Johnson</h3>
+                <h3 class="mb-0">Ralph Johnson</h3>
                 <p>Manager</p>
               </div>
             </div>
@@ -517,7 +554,7 @@
                 <img class="w-100" src="./assets/public/images/agent1.png" alt="Our_Developer" />
               </div>
               <div class="item_text py-3">
-                <h3>Lori Ramos</h3>
+                <h3 class="mb-0">Lori Ramos</h3>
                 <p>Marketing</p>
               </div>
             </div>
@@ -528,7 +565,7 @@
                 <img class="w-100" src="./assets/public/images/agent2.png" alt="Our_Developer" />
               </div>
               <div class="item_text py-3">
-                <h3>Jack Graham</h3>
+                <h3 class="mb-0">Jack Graham</h3>
                 <p>Marketing</p>
               </div>
             </div>
@@ -539,7 +576,7 @@
                 <img class="w-100" src="./assets/public/images/agent3.png" alt="Our_Developer" />
               </div>
               <div class="item_text py-3">
-                <h3>Augusta Silva</h3>
+                <h3 class="mb-0">Augusta Silva</h3>
                 <p>Leader Homez</p>
               </div>
             </div>
@@ -550,7 +587,7 @@
                 <img class="w-100" src="./assets/public/images/agent4.png" alt="Our_Developer" />
               </div>
               <div class="item_text py-3">
-                <h3>Albert Flores</h3>
+                <h3 class="mb-0">Albert Flores</h3>
                 <p>Marketig</p>
               </div>
             </div>
@@ -561,7 +598,7 @@
                 <img class="w-100" src="./assets/public/images/agent2.png" alt="Our_Developer" />
               </div>
               <div class="item_text py-3">
-                <h3>Jack Graham</h3>
+                <h3 class="mb-0">Jack Graham</h3>
                 <p>Marketing</p>
               </div>
             </div>
@@ -572,22 +609,23 @@
 
 
 
-        <!-- -------------- Banner SECTION start   ------------  -->
+    <!-- -------------- Banner SECTION start   ------------  -->
 
-        <section class="banner_section">
-          <div class="container">
-            <div class="row">
-              <div class="col-5">
-                <div class="banner_main d-flex flex-column align-items-start">
-                  <h1 class="text-capitalize lh-sm fw-bold">Start Listing or Buying a
-                    Property With Realton</h1>
-                    <p class="mb-0">Talk to our experts or Browse through more properties.</p>
-                    <button class="py-3 px-4 fw-bold border-0 rounded-3 cursor mt-4">Get Started <span class="ms-1">&#8599;</span></button>
-                </div>
-              </div>
+    <section class="banner_section rounded-3 rounded-sm-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="banner_main d-flex flex-column align-items-md-start align-items-center">
+              <h1 class="text-capitalize text-white text-md-start text-center lh-sm fw-bold">Start Listing or Buying a
+                Property With Realton</h1>
+              <p class="mb-0 text-md-start text-white text-center">Talk to our experts or Browse through more properties.</p>
+              <button class="py-3 px-4 fw-bold border-0 rounded-3 cursor mt-4">Get Started <span
+                  class="ms-1"><i class="bi bi-arrow-up-right"></i></span></button>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -634,140 +672,141 @@
 
   </main>
 
-  <footer class="pb-4">
+  <footer class="pb-4 bg-dark">
     <div class="container">
-      <div class="row">
-        <div class="col-md-5">
+      <div class="row gap-5 gap-lg-0">
+        <div class="col-lg-5">
           <div class="footer_contact_detail">
             <div class="footer_logo mb-4">
               <img src="./assets/public/images/logo.png" alt="footer_logo">
             </div>
-            <div class="address align-items-end d-flex gap-5 mb-4">
+            <div
+              class="address align-items-sm-end align-items-start flex-column flex-sm-row d-flex gap-sm-5 gap-2 mb-4">
               <div class="number">
-                <p class="m-1">Total Free Customer Care</p>
+                <p class="mb-1 text-secondary">Total Free Customer Care</p>
                 <h3>
-                  <a href="tel:+(088) 123 456 789">+(088) 123 456 789</a>
+                  <a href="tel:+(088) 123 456 789" class="text-white">+(088) 123 456 789</a>
                 </h3>
               </div>
               <div class="email">
                 <p class="mb-1">Live Support?</p>
-                <h3><a href="mail:hi@homez.com">hi@homez.com</a></h3>
+                <h3><a href="mail:hi@homez.com" class="text-white">hi@homez.com</a></h3>
               </div>
             </div>
-            <div class="apps_detail mb-4">
+            <div class="apps_detail text-white mb-4">
               <h3>Apps</h3>
-              <div class="devices d-flex gap-2">
+              <div class="devices d-flex gap-2 flex-column flex-sm-row">
                 <div class="apps_detail_main d-flex gap-3 rounded-2 py-2 px-3 align-items-center">
                   <div class="device_logo">
-                    <span><i class="fa-brands fa-apple"></i></span>
+                    <span><i class="bi bi-apple"></i></span>
                   </div>
                   <div class="device_name d-flex flex-column">
-                    <p class="mb-0">Download on the</p>
+                    <p class="mb-0 text-secondary">Download on the</p>
                     <h3>App Store</h3>
                   </div>
                 </div>
                 <div class="apps_detail_main d-flex gap-3 rounded-2 py-2 px-3 align-items-center">
                   <div class="device_logo">
-                    <span><i class="fa-brands fa-google-play"></i></span>
+                    <span><i class="bi bi-google-play"></i></span>
                   </div>
                   <div class="device_name d-flex flex-column">
-                    <p class="mb-0">Get in on</p>
+                    <p class="mb-0 text-secondary">Get in on</p>
                     <h3>Google Play</h3>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="social">
-              <h3>Follow us on social media</h3>
+            <div class="social text-white">
+              <h3 class="text-white">Follow us on social media</h3>
               <div class="socail_platform d-flex gap-4 mt-3">
-                <a href=""><span><i class="fa-brands fa-facebook-f"></i></span></a>
-                <a href=""><span><i class="fa-brands fa-twitter"></i></span></a>
-                <a href=""><span><i class="fa-brands fa-instagram"></i></span></a>
-                <a href="">
-                  <span><i class="fa-brands fa-linkedin-in"></i></span>
+                <a href="" class="text-white"><span><i class="bi bi-facebook"></i></span></a>
+                <a href="" class="text-white"><span><i class="bi bi-twitter"></i></span></a>
+                <a href="" class="text-white"><span><i class="bi bi-instagram"></i></span></a>
+                <a href="" class="text-white">
+                  <span><i class="bi bi-linkedin"></i></span>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-lg-7">
           <div class="row">
             <div class="col-12">
               <div class="footer_input mb-4">
-                <h3 class="fw-semibold text-capitalize mb-3">keep yourself Up to Date</h3>
+                <h3 class="fw-semibold text-capitalize mb-3 text-white">keep yourself Up to Date</h3>
                 <div class="input-container position-relative w-100">
-                  <input type="text" class="w-100 rounded-3 py-3 px-4" placeholder="Enter your email"> 
-                  <button type="submit" class="position-absolute me-3 border-0 ">Subscribe</button>
+                  <input type="text" class="w-100 rounded-3 py-3 px-4 text-white" placeholder="Enter your email">
+                  <button type="submit" class="position-absolute me-3 border-0 bg-transparent">Subscribe</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-4">
+            <div class="col-sm-4">
               <div class="footer_menu_left">
-                <h3 class="mb-4">Popular Search</h3>
+                <h3 class="mb-4 text-white">Popular Search</h3>
                 <div class="footer_menu_items">
                   <ul class="p-0">
                     <li class="mb-3">
-                      <a href="">Apartment for Sale</a>
+                      <a href="" class="text-secondary">Apartment for Sale</a>
                     </li class="mb-3">
                     <li class="mb-3">
-                      <a href="">Apartment for Rent</a>
+                      <a href="" class="text-secondary">Apartment for Rent</a>
                     </li class="mb-3">
                     <li class="mb-3">
-                      <a href="">Office for Sale</a>
+                      <a href="" class="text-secondary">Office for Sale</a>
                     </li>
                     <li class="mb-3">
-                      <a href="">Office for Rent</a>
+                      <a href="" class="text-secondary">Office for Rent</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
               <div class="footer_menu_left">
-                <h3 class="mb-4">Quick Links</h3>
+                <h3 class="mb-4 text-white">Quick Links</h3>
                 <div class="footer_menu_items">
                   <ul class="p-0">
                     <li class="mb-3">
-                      <a href="">Terms of Use</a>
+                      <a href="" class="text-secondary">Terms of Use</a>
                     </li class="mb-3">
                     <li class="mb-3">
-                      <a href="">Priacy Policy</a>
+                      <a href="" class="text-secondary">Priacy Policy</a>
                     </li>
                     <li class="mb-3">
-                      <a href="">Pricing Plans</a>
+                      <a href="" class="text-secondary">Pricing Plans</a>
                     </li>
                     <li class="mb-3">
-                      <a href="">Our Services</a>
+                      <a href="" class="text-secondary">Our Services</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
               <div class="footer_menu_left">
-                <h3 class="mb-4">Discovery</h3>
+                <h3 class="mb-4 text-white">Discovery</h3>
                 <div class="footer_menu_items">
                   <ul class="p-0">
                     <li class="mb-3">
-                      <a href="">Chicago</a>
+                      <a href="" class="text-secondary">Chicago</a>
                     </li>
                     <li class="mb-3">
-                      <a href="">New Jersey</a>
+                      <a href="" class="text-secondary">New Jersey</a>
                     </li>
                     <li class="mb-3">
-                      <a href="">Los Angeles</a>
+                      <a href="" class="text-secondary">Los Angeles</a>
                     </li>
                     <li class="mb-3">
-                      <a href="">New York</a>
+                      <a href="" class="text-secondary">New York</a>
                     </li>
                     <li class="mb-3">
-                      <a href="">California</a>
+                      <a href="" class="text-secondary">California</a>
                     </li>
                   </ul>
                 </div>
-              </div>  
+              </div>
             </div>
           </div>
 
@@ -777,13 +816,13 @@
         <div class="col-12">
           <div class="footer_bottom">
             <div class="footer_bottom_main d-flex justify-content-between flex-column flex-sm-row align-items-center">
-              <div class="copywrite fw-normal">
+              <div class="copywrite fw-normal text-secondary">
                 <span>&copy; Homez – All rights reserved</span>
               </div>
               <div class="footer_social d-flex gap-4">
-                <a href="">Privacy</a>
-                <a href="">Terms</a>
-                <a href="">Terms</a>
+                <a href="" class="text-secondary">Privacy</a>
+                <a href="" class="text-secondary">Terms</a>
+                <a href="" class="text-secondary">Terms</a>
               </div>
             </div>
           </div>

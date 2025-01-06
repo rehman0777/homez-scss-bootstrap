@@ -2,18 +2,12 @@
 @use "../abstracts/mixins" as *;
 
 .explore_cities {
-    padding: 60px 0px 60px 0px;
   
     .title {
 
       .title_text {
         a {
           @include typography(15px, 28px);
-          color: $black-clr;
-  
-          &:hover {
-            text-decoration: $text_decoration_underline;
-          }
         }
       }
     }
@@ -29,7 +23,6 @@
   
         .card_text {
           p {
-            color: $text-clr;
             @include typography();
         }
         }

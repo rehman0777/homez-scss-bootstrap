@@ -9,14 +9,27 @@
         h2{
             width: 80%;
         }
-
-        .client_img{
-            width: 70px;
-            height: 70px;
-            img{
-                border-radius: $border_radius + 40;
-            }
+        >span{
+            font-size: 60px;
+            color: $footer-text-clr;
         }
     }
+      
+      .slick-dot {
+        width: 40px; 
+        height: 40px;
+        transition: transform 0.3s ease;
+        opacity: 20%;
+      }
+      
+      .slick-dot img {  
+        object-fit: cover;
+      }
+      
+      .slick-dot.active {
+        transform: scale(1.2);
+        opacity: 100%;
+      }
+      
       
 }

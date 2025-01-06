@@ -5,21 +5,24 @@
 
 .dream_home_img{
     .watch_video{
-        background-color: $white-clr;
-        box-shadow: 0px 0px 50px 0px #181A2012;
+        box-shadow: 0px 0px 20px 0px #181A2012;
         right: 0;
         top: 90px;
         animation: one 2s infinite alternate;
+
+        @media (max-width: 576px) {
+          top: 20px;
+        }
     }
       
       @keyframes one {
         0% {
           transform: rotateX(0);
-          transform: translate(0, 0); 
+          transform: translate(-40px, 0); 
         }
         100% {
           transform: rotateX(50deg);
-          transform: translate(20px, 50px);
+          transform: translate(-20px, 50px);
         }
       }
     .dream_home_detail{
@@ -31,7 +34,7 @@
 
     .counter{
         .award{
-            span{
+            p{
                 @include typography();
             }
         }

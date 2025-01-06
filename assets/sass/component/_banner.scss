@@ -7,9 +7,6 @@
     @include backgroundImage();
 
     .banner_main{
-        h1,p{
-            color: $white-clr;
-        }
         button{
             @include fill_Button( $white-clr, $black-clr, $black-clr, $white-clr, $text-clr, $text-clr);
         }
