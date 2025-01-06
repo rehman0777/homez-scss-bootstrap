@@ -449,7 +449,7 @@ header {
 }
 
 .banner_section {
-  background: url(../../../assets/public/images/banner.png);
+  background: url(../../assets/public/images/banner.png);
   background-repeat: repeat;
   background-size: cover;
 }
