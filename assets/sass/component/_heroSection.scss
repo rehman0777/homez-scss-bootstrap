@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .hero_section {
-  background: url("../../../assets/public/images/banner3.png");
+  background-image: url("../../assets/public/images/banner3.png");
   @include backgroundImage();
   padding: 150px 0px;
 

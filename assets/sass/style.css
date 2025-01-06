@@ -204,7 +204,7 @@ header {
 }
 
 .hero_section {
-  background: url("../../../assets/public/images/banner3.png");
+  background-image: url("../../assets/public/images/banner3.png");
   background-repeat: repeat;
   background-size: cover;
   padding: 150px 0px;
